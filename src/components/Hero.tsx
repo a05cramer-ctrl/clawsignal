@@ -88,7 +88,7 @@ export default function Hero() {
           <a href="#identity">Identity</a>
           <a href="#signals">Signals</a>
           <button className={styles.ctaPrimary}><span className={styles.ctaIcon}>◈</span> Buy $CLAW</button>
-          <a href="https://x.com" target="_blank" rel="noopener noreferrer" className={styles.ctaSecondary}>Visit our dev page</a>
+          <a href="https://x.com/clawsignal_dev" target="_blank" rel="noopener noreferrer" className={styles.ctaSecondary}>Visit our dev page</a>
         </div>
       </nav>
 
@@ -119,7 +119,7 @@ export default function Hero() {
           <button className={styles.ctaPrimary}>
             <span className={styles.ctaIcon}>◈</span> Buy $CLAW
           </button>
-          <a href="https://x.com" target="_blank" rel="noopener noreferrer" className={styles.ctaSecondary}>Visit our dev page</a>
+          <a href="https://x.com/clawsignal_dev" target="_blank" rel="noopener noreferrer" className={styles.ctaSecondary}>Visit our dev page</a>
         </div>
       </div>
 

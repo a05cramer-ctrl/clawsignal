@@ -9,7 +9,7 @@ export default function Tokenomics() {
           <span>CLAWSIGNAL</span>
         </div>
         <div className={styles.footerLinks}>
-          <a href="#">Twitter / X</a>
+          <a href="https://x.com/clawsignal_dev" target="_blank" rel="noopener noreferrer">Twitter / X</a>
         </div>
         <span className={styles.footerMono}>SIGNAL ACTIVE — © 2025 CLAWSIGNAL</span>
       </div>
