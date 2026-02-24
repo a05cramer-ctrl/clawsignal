@@ -12,6 +12,7 @@ declare global {
 export default function Hero() {
   const [signalBlink, setSignalBlink] = useState(true)
   const [statsVisible, setStatsVisible] = useState(false)
+  const [copied, setCopied] = useState(false)
   const scriptRef = useRef<HTMLScriptElement | null>(null)
 
   useEffect(() => {
@@ -23,6 +24,14 @@ export default function Hero() {
     const t = setTimeout(() => setStatsVisible(true), 600)
     return () => clearTimeout(t)
   }, [])
+
+  const CA = 'HUwwnfvDR8o8gqoc8uEehRn4ZowMqZ4MkdaL3o1ppump'
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(CA)
+    setCopied(true)
+    setTimeout(() => setCopied(false), 2000)
+  }
 
   useEffect(() => {
     const containerId = 'tv_widget_container'
@@ -87,7 +96,7 @@ export default function Hero() {
         <div className={styles.navLinks}>
           <a href="#identity">Identity</a>
           <a href="#signals">Signals</a>
-          <a href="https://pump.fun/HUwwnfvDR8o8gqoc8uEehRn4ZowMqZ4MkdaL3o1ppump" target="_blank" rel="noopener noreferrer" className={styles.ctaPrimary}><span className={styles.ctaIcon}>◈</span> Buy $CLAW</a>
+          <button onClick={handleCopy} className={styles.ctaPrimary}><span className={styles.ctaIcon}>◈</span> {copied ? 'Copied!' : 'Buy $CLAW'}</button>
           <a href="https://x.com/clawsignal_dev" target="_blank" rel="noopener noreferrer" className={styles.ctaSecondary}>Visit our dev page</a>
         </div>
       </nav>
@@ -116,9 +125,9 @@ export default function Hero() {
           <span>MADE BY CLAWDBOT. DESIGNED FOR YOU.</span>        </div>
 
         <div className={styles.ctaRow}>
-          <a href="https://pump.fun/HUwwnfvDR8o8gqoc8uEehRn4ZowMqZ4MkdaL3o1ppump" target="_blank" rel="noopener noreferrer" className={styles.ctaPrimary}>
-            <span className={styles.ctaIcon}>◈</span> Buy $CLAW
-          </a>
+          <button onClick={handleCopy} className={styles.ctaPrimary}>
+            <span className={styles.ctaIcon}>◈</span> {copied ? 'Copied!' : 'Buy $CLAW'}
+          </button>
           <a href="https://x.com/clawsignal_dev" target="_blank" rel="noopener noreferrer" className={styles.ctaSecondary}>Visit our dev page</a>
         </div>
       </div>
