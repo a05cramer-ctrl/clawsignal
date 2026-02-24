@@ -87,7 +87,7 @@ export default function Hero() {
         <div className={styles.navLinks}>
           <a href="#identity">Identity</a>
           <a href="#signals">Signals</a>
-          <button className={styles.ctaPrimary}><span className={styles.ctaIcon}>◈</span> Buy $CLAW</button>
+          <a href="https://pump.fun/HUwwnfvDR8o8gqoc8uEehRn4ZowMqZ4MkdaL3o1ppump" target="_blank" rel="noopener noreferrer" className={styles.ctaPrimary}><span className={styles.ctaIcon}>◈</span> Buy $CLAW</a>
           <a href="https://x.com/clawsignal_dev" target="_blank" rel="noopener noreferrer" className={styles.ctaSecondary}>Visit our dev page</a>
         </div>
       </nav>
@@ -116,9 +116,9 @@ export default function Hero() {
           <span>MADE BY CLAWDBOT. DESIGNED FOR YOU.</span>        </div>
 
         <div className={styles.ctaRow}>
-          <button className={styles.ctaPrimary}>
+          <a href="https://pump.fun/HUwwnfvDR8o8gqoc8uEehRn4ZowMqZ4MkdaL3o1ppump" target="_blank" rel="noopener noreferrer" className={styles.ctaPrimary}>
             <span className={styles.ctaIcon}>◈</span> Buy $CLAW
-          </button>
+          </a>
           <a href="https://x.com/clawsignal_dev" target="_blank" rel="noopener noreferrer" className={styles.ctaSecondary}>Visit our dev page</a>
         </div>
       </div>
