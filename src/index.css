@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap');
+
+:root {
+  --navy-950: #020B18;
+  --navy-900: #040F1F;
+  --navy-800: #071628;
+  --navy-700: #0A1F38;
+  --navy-600: #0D2847;
+  --blue-500: #0A4A8F;
+  --blue-400: #0E5EBF;
+  --electric-400: #1A8FE3;
+  --electric-300: #3AABFF;
+  --electric-200: #7DCFFF;
+  --electric-100: #B8E7FF;
+  --glow-primary: rgba(26, 143, 227, 0.15);
+  --glow-strong: rgba(58, 171, 255, 0.25);
+  --grid-line: rgba(26, 143, 227, 0.08);
+  --grid-line-strong: rgba(26, 143, 227, 0.15);
+  --text-primary: #EEF6FF;
+  --text-secondary: rgba(184, 231, 255, 0.7);
+  --text-muted: rgba(125, 207, 255, 0.4);
+  --text-mono: #3AABFF;
+  --border-subtle: rgba(26, 143, 227, 0.12);
+  --border-active: rgba(58, 171, 255, 0.35);
+
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text-primary);
+  background-color: var(--navy-950);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::selection {
+  background: var(--electric-400);
+  color: var(--navy-950);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--navy-900);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--blue-400);
+  border-radius: 2px;
+}
