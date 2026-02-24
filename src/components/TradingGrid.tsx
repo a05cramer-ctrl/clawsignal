@@ -102,7 +102,7 @@ export default function TradingGrid() {
       })
 
       // Signal line (moving average style)
-      const points = candles.map((c, i) => ({
+      const points = candles.map((c, _i) => ({
         x: c.x + candleW / 2,
         y: ((c.open + c.close) / 2) + H * 0.15,
       }))
